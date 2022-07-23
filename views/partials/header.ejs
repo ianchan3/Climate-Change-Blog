@@ -5,16 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/stylesheets/style.css">
-  <title>Climate Change</title>
+  <title>Feel the Heat?</title>
 </head>
-<body>
-  <nav>
-    <a href="/">Home Page</a>
-    <% if (user) { %>
-      <a href="/logout" class="login">LOG OUT</a>
-    <% } else { %>
-      <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
-    <% } %>
+<nav>
+  <h2><a href="/" class="home">Feel the Heat?</a></h2>&nbsp;&nbsp;&nbsp;
+  <a href="/" class="nav">Articles</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="/" class="nav">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <% if (user) { %>
+        <a href="/logout" class="nav">LOG OUT</a>&nbsp;&nbsp;
+      <% } else { %>
+        <a href="/auth/google" class="nav">LOG IN&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+      <% } %>
   </nav>
-</body>
-</html>
+ 
+    

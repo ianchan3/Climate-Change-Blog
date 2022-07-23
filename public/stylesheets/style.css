@@ -1,19 +1,97 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+  color: #424748;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: 
+    "nav"
+    "main"
+}
+
+body > nav {
+  grid-area: nav;
+  background-color: blue;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px 0 30px;
+}
+
+nav > h2 {
+  margin-right: auto;
 }
 
 a {
-  color: #00B7FF;
+  color: yellow;
+  font-size: 15px;
 }
 
-.login {
+.nav {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 34px;
 }
 
-.login img {
+.nav img {
   height: 30px;
 } 
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav > a:hover:not(.active) {
+  color: yellow;
+  background-color: blue;
+}
+
+nav > a.active {
+  color: white;
+  cursor: default;
+}
+
+.home:hover:not(.active) {
+  background-color: blue;
+}
+
+h1 {
+  display: inline;
+  align-items: center;
+  margin-left: 42%;
+  color: yellow;
+}
+
+table {
+  font-size: 30px;
+}
+
+table thead th {
+  padding: 5px;
+  border-bottom: 2px solid #424748;
+}
+
+table td {
+  padding: 10px;
+  text-align: center;
+}
+/* main {
+  grid-template-areas: "h1 h2 h3";
+}
+
+h2 {
+  grid-area: h2;
+} */
+
+hr {
+  color: black;
+}
+
