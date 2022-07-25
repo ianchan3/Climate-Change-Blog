@@ -1,5 +1,65 @@
 <%- include('../partials/header') %>
 
-<h1>Hi</h1>
+<section id="show-page">
+  <div>Title:</div>
+  <div><%= article.title %></div>
+  <div>Release Date:</div>
+  <div><%= article.releaseDate</div>
+</section>
+
+<% if (user) { %>
+  <form id="add-review-form" method="POST"
+    action="/articles/<%= article._id %>/reviews">
+    <label>Review:</label>
+    <textarea name="content"></textarea>
+    <label>Rating:</label>
+    <select name="rating">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5" selected>5</option>
+    </select>
+    <input type="submit" value="Add Review">
+  </form>
+<% } %>
+
+<% if (article.reviews.length) { %>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Review</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% let sum = 0; %>
+      <% article.reviews.forEach(function(r) { %>
+        <% sum += r.rating %>
+        <tr>
+          <td class="review-user"><img src="<%= r.userAvatar %>" alt = "avatar" referrerpolicy="no-referrer"><%= r.userName %></td>
+          <td><%= r.createdAt.toLocaleDateString() %></td>
+          <td><%= r.content %></td>
+          <td><%= r.rating %></td>
+          <td>
+            <% if (user?._id.equals(r.user) ) { %>
+              <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
+                <button type="submit">X</button>
+              </form>
+            <% } %>
+          </td>
+        </tr>
+        <% }); %>
+        <tr>
+          <td></td>
+          <td colspan="3"> </td>
+          <td><%= (sum / article.reviews.length).toFixed(2) %></td>
+        </tr>
+    </tbody>
+  </table>
+<% } else { %>
+  <h5>No Reviews Yet</h5>
+<% } %>
 
 <%- include('../partials/footer') %>

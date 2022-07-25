@@ -5,6 +5,7 @@
       <th>Articles</th>
       <th>Release<br>Date</th>
       <th>Details</th>
+      <td><a href="/articles/new">New Article</a></td>
       <th></th>
     </tr>
   </thead>
@@ -14,6 +15,7 @@
         <td><%= a.Articles %></td>
         <td><%= a.releaseDate %></td>
         <td><a href="/articles/<%= a._id %>">DETAILS</a></td>
+
       </tr>
       <% }); %>
     </tbody>

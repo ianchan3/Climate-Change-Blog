@@ -3,7 +3,7 @@ const Article = require("../models/article");
 module.exports = {
   index,
   show,
-  // create
+  new: newArticle,
 }
 
 function show(req, res) {
@@ -14,4 +14,8 @@ function index(req, res) {
   Article.find({}, function(err, articles) {
     res.render('articles/index', { title: 'All Articles', articles });
   });
+}
+
+function newArticle(req, res) {
+  res.render("articles/new", { title: "Add Article" });
 }
