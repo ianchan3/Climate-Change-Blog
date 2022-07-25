@@ -2,13 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/stylesheets/style.css">
   <title>Feel the Heat?</title>
 </head>
+
 <nav>
   <h2><a href="/" class="home">Feel the Heat?</a></h2>&nbsp;&nbsp;&nbsp;
+  <div class="icons">
+    <a href="https://www.facebook.com" target= "_blank" class="icon icon--facebook">
+        <i class="ri-facebook-line"></i>
+      </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://www.instagram.com" target = "_blank" class ="icon icon--instagram">
+      <i class="ri-instagram-line"></i>
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://www.twitter.com" target="_blank" class="icon icon--twitter">
+      <i class="ri-twitter-line"></i>
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="https://www.linkedin.com" target= "_blank" class="icon icon--linkedin">
+      <i class="ri-linkedin-line"></i>
+    </a>&nbsp;&nbsp;&nbsp;
+    
+  </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="./articles" class="nav">Articles</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="/" class="nav">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <% if (user) { %>
@@ -17,4 +34,4 @@
         <a href="/auth/google" class="nav">LOG IN&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
       <% } %>
   </nav>
-    
+  

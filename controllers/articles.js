@@ -2,7 +2,8 @@ const Article = require("../models/article");
 
 module.exports = {
   index,
-  show
+  show,
+  // create
 }
 
 function show(req, res) {
