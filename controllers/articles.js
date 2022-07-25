@@ -1,5 +1,6 @@
 const Article = require("../models/article");
-/*const Review = ("../models/review"); */
+/*const Review = require("../models/review"); 
+*/
 
 module.exports = {
   index,
@@ -18,13 +19,11 @@ function create(req, res) {
 }
 
 function show(req, res) {
-  /* Article.findById(req.params.id, function(err, flight) {
-    Review.find({article: article._id}, function(err, reviews) { */
-    res.render("articles/show", { title: "Article Detail", Article});
-  }
-  // );
-//   });
-// }
+    Article.findById(req.params.id, function(err, article) {
+    res.render("articles/show", { title: "Article Detail", article});
+  });
+};
+
 
 
 function index(req, res) {

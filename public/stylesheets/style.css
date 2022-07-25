@@ -18,6 +18,7 @@ body {
 
 th, td, label {
   color: red;
+  text-align: center;
 }
 
 nav {
