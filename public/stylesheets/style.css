@@ -16,7 +16,7 @@ body {
   background-size: cover;
 }
 
-th {
+th, td, label {
   color: red;
 }
 

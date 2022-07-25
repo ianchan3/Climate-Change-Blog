@@ -15,9 +15,9 @@ const reviewSchema = new Schema({
 
 const articleSchema = new Schema({
   title: String,
-  releaseDate: {
+  publishedDate: {
     type: Number,
-    defualt: function() {
+    default: function() {
       return new Date().getFullYear();
     },
     min: 2000

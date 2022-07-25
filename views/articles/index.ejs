@@ -3,7 +3,7 @@
   <thead>
     <tr>
       <th>Articles</th>
-      <th>Release<br>Date</th>
+      <th>Published<br>Date</th>
       <th>Details</th>
       <td><a href="/articles/new">New Article</a></td>
       <th></th>
@@ -12,10 +12,9 @@
   <tbody>
     <% articles.forEach(function(a) { %>
       <tr>
-        <td><%= a.Articles %></td>
-        <td><%= a.releaseDate %></td>
+        <td><%= a.title %></td>
+        <td><%= a.publishedDate %></td>
         <td><a href="/articles/<%= a._id %>">DETAILS</a></td>
-
       </tr>
       <% }); %>
     </tbody>
