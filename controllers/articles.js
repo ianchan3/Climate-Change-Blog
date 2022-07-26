@@ -1,6 +1,4 @@
 const Article = require("../models/article");
-/*const Review = require("../models/review"); 
-*/
 
 module.exports = {
   index,

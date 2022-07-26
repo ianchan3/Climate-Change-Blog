@@ -4,19 +4,19 @@ const Schema = mongoose.Schema;
 const reviewSchema = new Schema({
   content: {
     type: String,
-  },
-  title: {
-    type: String,
-  },
-  publishedDate: {
-    type: Number,
+    match: /.{10,}/
   },
   rating: {
     type: Number,
     min: 1,
-    max: 5, 
+    max: 5,
     default: 5
   },
+  user: {type: Schema.Types.ObjectId, ref: 'User'},
+  userName: String,
+  userAvatar: String
+}, {
+  timestamps: true
 });
 
 const articleSchema = new Schema({
@@ -29,8 +29,7 @@ const articleSchema = new Schema({
     min: 2000
   },
   reviews: [reviewSchema]
-}, {
-  timestamps: true
+ }, {
 });
 
 module.exports = mongoose.model("Article", articleSchema);
