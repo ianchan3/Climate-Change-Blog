@@ -16,8 +16,9 @@ body {
   background-size: cover;
 }
 
-th, td, label {
+th, td, label, div, #add-review-form {
   color: red;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -33,7 +34,7 @@ nav > h2 {
 
 a {
   color: yellow;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .nav {
@@ -113,8 +114,8 @@ body > h1 {
 
 .icon {
   color: yellow;
-  width: 48px;
-  height: 48px;
+  width: 45px;
+  height: 45px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -156,6 +157,3 @@ body > h1 {
   background-color: #0077b5;
   outline-color: #0077b5;
 }
-
-
-

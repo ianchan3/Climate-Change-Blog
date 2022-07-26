@@ -5,6 +5,12 @@ const reviewSchema = new Schema({
   content: {
     type: String,
   },
+  title: {
+    type: String,
+  },
+  publishedDate: {
+    type: Number,
+  },
   rating: {
     type: Number,
     min: 1,
