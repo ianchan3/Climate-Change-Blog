@@ -3,7 +3,31 @@ const Article = require("../models/article");
 module.exports = {
   create,
   delete: deleteReview,
+  edit,
+  update 
 };
+
+function update(req, res) {
+  Article.findOneAndUpdate(
+    {_id: req.params.id, userRecommending: req.user._id},
+    // update object with updated properties
+    req.body,
+    // options object with new: true to make sure updated doc is returned
+    {new: true},
+    function(err, article) {
+   
+      res.redirect(`/articles/${article._id}`);
+    }
+  );
+}
+
+function edit(req, res) {
+  Article.findOne({_id: req.params.id, userRecommending: req.user._id}, function(err, article) {
+
+    res.render('articles/edits', {article});
+  });
+} 
+
 
 async function deleteReview(req, res, next) {
   try {

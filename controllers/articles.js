@@ -4,7 +4,7 @@ module.exports = {
   index,
   show,
   new: newArticle,
-  create
+  create,
 }
 
 function create(req, res) {

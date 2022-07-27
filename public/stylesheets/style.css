@@ -68,6 +68,10 @@ nav > a.active {
   background-color: red;
 }
 
+.review-user > img {
+  width: 40px;
+}
+
 body > h1 {
   /* margin: 0; */
   justify-content: space-evenly;

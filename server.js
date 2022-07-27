@@ -15,6 +15,7 @@ var indexRouter = require('./routes/index');
 var homepagesRouter = require('./routes/homepages');
 var articlesRouter = require("./routes/articles");
 var reviewsRouter = require("./routes/reviews");
+// var editsRouter = require("./routes/edits
 
 var app = express();
 
