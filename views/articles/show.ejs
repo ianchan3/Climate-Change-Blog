@@ -47,11 +47,11 @@
           <td>
             <% if (user?._id.equals(r.user) ) { %>
               <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
-                <button type="submit">X</button>
+                <button type="submit">Delete Button</button>
               </form>
-              <form action="/edits/<%= r._id %>?_method=EDIT" method="PUT">
+              <a href="/articles/<%= r._id %>/reviews/edit">
                 <button type="submit">Edit</button>
-              </form>
+              </a>
             <% } %>
           </td>
         </tr>

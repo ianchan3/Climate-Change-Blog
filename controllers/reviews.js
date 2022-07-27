@@ -8,25 +8,25 @@ module.exports = {
 };
 
 function update(req, res) {
-  Article.findOneAndUpdate(
-    {_id: req.params.id, userRecommending: req.user._id},
-    // update object with updated properties
-    req.body,
-    // options object with new: true to make sure updated doc is returned
-    {new: true},
+  Article.findOne(
+    {'reviews._id': req.params.id},
     function(err, article) {
-   
-      res.redirect(`/articles/${article._id}`);
+      const commentSubdoc = article.reviews.id(req.params.id);
+      if (!commentSubdoc.user.equals(req.user._id)) return res.redirect(`/articles/${article._id}`);
+      commentSubdoc.content = req.body.content;
+      article.save(function(err) {
+        res.redirect(`/articles/${article._id}`);
+      });  
     }
   );
 }
 
 function edit(req, res) {
-  Article.findOne({_id: req.params.id, userRecommending: req.user._id}, function(err, article) {
-
-    res.render('articles/edits', {article});
+  Article.findOne({'reviews._id': req.params.id}, function(err, article) {
+    if (err || !article) return res.redirect('/articles');
+    res.render('articles/edits', {article, review: req.params.id});
   });
-} 
+}
 
 
 async function deleteReview(req, res, next) {
@@ -47,7 +47,6 @@ function create (req, res) {
     req.body.user = req.user._id;
     req.body.userName = req.user.name;
     req.body.userAvatar = req.user.avatar;
-
     article.reviews.push(req.body);
     article.save(function(err) {
       res.redirect(`/articles/${article._id}`);
