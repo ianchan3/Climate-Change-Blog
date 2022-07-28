@@ -15,7 +15,7 @@ const reviewSchema = new Schema({
   user: {type: Schema.Types.ObjectId, ref: 'User'},
   userName: String,
   userAvatar: String
-}, {
+  }, {
   timestamps: true
 });
 
@@ -27,9 +27,9 @@ const articleSchema = new Schema({
       return new Date().getFullYear();
     },
     min: 2000
-  },
+    },
   reviews: [reviewSchema]
- }, {
+    }, {
 });
 
 module.exports = mongoose.model("Article", articleSchema);

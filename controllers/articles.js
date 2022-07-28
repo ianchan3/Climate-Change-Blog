@@ -14,16 +14,15 @@ function create(req, res) {
     req.body.userAvatar = req.user.avatar;
   var article = new Article(req.body);
   article.save(function(err) {
-    // one way to handle errors
     if (err) return res.redirect('/articles/new');
     res.redirect("/articles");
+    });
   });
-});
 }
 
 function show(req, res) {
-    Article.findById(req.params.id, function(err, article) {
-    res.render("articles/show", { title: "Article Detail", article});
+  Article.findById(req.params.id, function(err, article) {
+  res.render("articles/show", { title: "Article Detail", article});
   });
 };
 

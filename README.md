@@ -3,7 +3,9 @@ Feel the Heat is a online blog with the intent of raising awareness on global wa
 
 ## **Samples of Blog**
 <img src = https://i.imgur.com/fNjLwlr.jpg>
-
+<img src = https://i.imgur.com/4QiDHqk.jpg>
+<img src = https://i.imgur.com/F0sJYsn.jpg>
+<img src = https://i.imgur.com/F0sJYsn.jpg>
 
 ## **Technologies Used**
 HTML,

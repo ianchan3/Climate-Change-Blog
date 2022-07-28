@@ -33,7 +33,6 @@ async function deleteReview(req, res, next) {
   try {
     const article = await Article.findOne({"reviews._id": req.params.id, "reviews.user": req.user._id});
     if (!article) throw new Error("Nice Try!");
-    // Remove the using the remove method on Mongoose arrays
     article.reviews.remove(req.params.id);
     await article.save();
     res.redirect(`/articles/${article._id}`);
