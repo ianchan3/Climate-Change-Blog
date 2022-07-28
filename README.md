@@ -18,7 +18,7 @@ Feel the Heat is a online blog with the intent of raising awareness on global wa
 ![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
 ![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
 
-## :link: ** Important Links**
+## :link: **Important Links**
 [Feel the Heat Blog] (https://climate-change-blogproject.herokuapp.com/)
 [Trello Planning Board] (https://trello.com/b/ipMYjy0T/p2)
 
