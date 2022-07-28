@@ -1,7 +1,7 @@
-# Feel The Heat?
+# :fire: Feel The Heat?
 Feel the Heat is a online blog with the intent of raising awareness on global warming and climate change. People can sign up as users of the website and post interesting articles that will help educate about the effects of climate change. Users are also able to create reviews and give ratings to articles they liked or disliked.
 
-## **Samples of Blog**
+## :bar_chart: **Samples of Blog**
 <img src = https://i.imgur.com/fNjLwlr.jpg>
 <img src = https://i.imgur.com/4QiDHqk.jpg>
 <img src = https://i.imgur.com/F0sJYsn.jpg>
