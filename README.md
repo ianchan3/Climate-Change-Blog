@@ -7,7 +7,7 @@ Feel the Heat is a online blog with the intent of raising awareness on global wa
 <img src = https://i.imgur.com/F0sJYsn.jpg>
 <img src = https://i.imgur.com/FjifRrd.jpg>
 
-## **Technologies Used**
+## :computer: **Technologies Used**
 ![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
 ![Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express)
 ![Node](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
@@ -18,8 +18,10 @@ Feel the Heat is a online blog with the intent of raising awareness on global wa
 ![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
 ![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
 
-## **Link to the Blog**
+## ** Important Links**
 [Feel the Heat Blog] (https://climate-change-blogproject.herokuapp.com/)
+[Trello Planning Board] (https://trello.com/b/ipMYjy0T/p2)
+
 
 ## **Icebox Features (Next Steps)**
 - Allow users to receive notifictions to their email once a new article is posted
