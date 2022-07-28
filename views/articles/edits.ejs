@@ -1,5 +1,12 @@
 <%- include('../partials/header') %>
 
+<style>
+  body {
+    background-image: url('https://www.timeforkids.com/wp-content/uploads/2018/08/GlobalWarming-HERO.jpg');
+    background-size: cover;
+  }
+</style>
+
 <% if (user) { %>
   <form id="add-review-form" method="POST"
   action="/articles/<%= article._id %>/reviews/<%= review %>?_method=put">

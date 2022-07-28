@@ -1,10 +1,29 @@
 <%- include("../partials/header") %>
 
-<!-- <div class="maincontainer">
-<div class="thecard">
-<div class="thefront"><h1>Front of Card</h1></div>
-<div class="theback"><h1>Back of Card</h1> -->
-  
+<style>
+  body {
+    background-image: url('https://www.serviceobjects.com/blog/wp-content/uploads/2018/04/One-Tree-Planted-3.jpg');
+    background-size: cover;
+  }
+  a {
+    color: green;
+  }
+  nav > a:hover:not(.active) {
+    color: yellow;
+    background-color: green;
+    padding: 30px 6px;
+  }
+  .home:hover:not(.active) {
+    background-color: green;
+    color: yellow;
+    padding: 20px 6px 17px;
+  }
+  .icon {
+    color: yellow;
+    outline: 2px solid green;
+  }
+</style>
+
 <form id="new-form" action="/articles" method="POST">
   <label>Title:</label>
   <input type="text" name="title">
@@ -12,6 +31,7 @@
   <input type="text" name="publishedDate">
   <input type="submit" value="Add Article">
 </form>
+
 
 
 <%- include("../partials/footer") %>
