@@ -1,0 +1,37 @@
+body {
+    background-image: url('https://www.serviceobjects.com/blog/wp-content/uploads/2018/04/One-Tree-Planted-3.jpg');
+    background-size: cover;
+  }
+
+  a {
+    color: green;
+  }
+
+  nav > a:hover:not(.active) {
+    color: yellow;
+    background-color: green;
+    padding: 30px 6px;
+  }
+
+  .home:hover:not(.active) {
+    background-color: green;
+    color: yellow;
+    padding: 20px 6px 17px;
+  }
+
+  .icon {
+    color: yellow;
+    outline: 2px solid green;
+  }
+
+  #title, #publishedDate {
+    padding: 5px 0 5px 10px;
+    
+  }
+
+  label {
+    padding: 0 0 0 30px;
+  }
+  #new-form > label {
+    color: green;
+  }

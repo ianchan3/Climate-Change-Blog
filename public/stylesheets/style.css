@@ -13,70 +13,11 @@ body {
     "main";
 }
 
-#new-form > label {
-  color: green;
-}
-
-h3 {
-  color: yellow;
-  font-size: 18.2px;
-}
-
-.button, a.button {
-  color: green;
-  background-color: lightgreen;
-}
-
-.circle1, .circle2, .circle3, .circle4, .circle5, .circle6 {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  position: relative;
-  -webkit-transition: -webkit-transform 0.5s;
-}
-
-.circle1:hover, .circle2:hover, .circle3:hover, .circle4:hover, .circle5:hover, .circle6:hover {
-  -webkit-transform: rotate(90deg) translateZ(0);
-} 
-
-.circle1::after, .circle2::after, .circle3::after, .circle4::after, .circle5::after, .circle6::after {
-  content: " ";
-  position: absolute;
-  display: block;
-  background-color: lightblue;
-  height: 7px;
-  margin-top: -4px;
-  top: 50%;
-  left: 5px;
-  right: 5px;
-  z-index: 9;
-}
-.circle1::before, .circle2::before, .circle3::before, .circle4::before, .circle5::before, .circle6::before {
-  content: " ";
-  position: absolute;
-  display: block;
-  background-color: lightblue;
-  width: 7px;
-  margin-left: -4px;
-  left: 50%;
-  top: 5px;
-  bottom: 5px;
-  z-index: 9;
-}
-
-th, td, label, #show-page, #add-review-form {
-  color: yellow;
-  font-size: 25px;
-  text-align: center;
-  margin: auto;
-}
-
 nav {
   background-color: none;
   align-items: center;
   padding: 0 10px 0 30px;
   font-weight: bold;
-  
 }
 
 nav > h2 {
@@ -121,32 +62,6 @@ nav > a.active {
   background-color: lightblue;
   color: yellow;
   padding: 20px 6px 17px;
-}
-
-.review-user > img {
-  width: 40px;
-}
-
-body > h1 {
-  /* margin: 0; */
-  justify-content: space-evenly;
-  color: yellow;
-}
-
-#list td:nth-child(2), #list td:nth-child(3){
-  min-width: 100px;
-}
-
-#list a {
-  border-radius: 4px;
-  background-color: lightgreen;
-  padding: 4px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-#list a:hover {
-  background-color: white;
 }
 
 @keyframes shake {

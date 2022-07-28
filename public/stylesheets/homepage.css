@@ -1,0 +1,46 @@
+body {
+    background-image: url('https://s.w-x.co//util/image/w/polarbear4.jpg?crop=16:9&width=980&format=pjpg&auto=webp&quality=60');
+    background-size: cover;
+  }
+.circle1, .circle2, .circle3, .circle4, .circle5, .circle6 {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.5s;
+  margin: 15px 0 10px 20px;
+}
+
+.circle1:hover, .circle2:hover, .circle3:hover, .circle4:hover, .circle5:hover, .circle6:hover {
+  -webkit-transform: rotate(90deg) translateZ(0);
+} 
+
+.circle1::after, .circle2::after, .circle3::after, .circle4::after, .circle5::after, .circle6::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: lightblue;
+  height: 7px;
+  margin-top: -4px;
+  top: 50%;
+  left: 5px;
+  right: 5px;
+  z-index: 9;
+}
+.circle1::before, .circle2::before, .circle3::before, .circle4::before, .circle5::before, .circle6::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: lightblue;
+  width: 7px;
+  margin-left: -4px;
+  left: 50%;
+  top: 5px;
+  bottom: 5px;
+  z-index: 9;
+}
+h3 {
+  color: yellow;
+  font-size: 18.2px;
+  margin: 20px 0 10px 20px;
+}
