@@ -5,7 +5,7 @@ Feel the Heat is a online blog with the intent of raising awareness on global wa
 <img src = https://i.imgur.com/fNjLwlr.jpg>
 <img src = https://i.imgur.com/4QiDHqk.jpg>
 <img src = https://i.imgur.com/F0sJYsn.jpg>
-<img src = https://i.imgur.com/F0sJYsn.jpg>
+<img src = https://i.imgur.com/FjifRrd.jpg>
 
 ## **Technologies Used**
 ![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
