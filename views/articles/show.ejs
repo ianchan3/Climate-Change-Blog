@@ -3,18 +3,18 @@
 <link rel="stylesheet" href="/stylesheets/showpage.css">
 
 <section id="show-page">
-  <div>Title:</div>
+  <div class="title">Article Title:</div>
   <div><%= article.title %></div>
-  <div>Published Date:</div>
+  <div class="title">Published Date:</div>
   <div><%= article.publishedDate %></div>
 </section>
 
 <% if (user) { %>
   <form id="add-review-form" method="POST"
     action="/articles/<%= article._id %>/reviews">
-    <label>Review:</label>
-    <textarea name="content"></textarea>
-    <label>Rating:</label>
+    <label>Review:</label><br>
+    <textarea name="content"></textarea><br>
+    <label>Rating:</label><br>
     <select name="rating">
       <option value="1">1</option>
       <option value="2">2</option>
@@ -41,7 +41,7 @@
       <% article.reviews.forEach(function(r) { %>
         <% sum += r.rating %>
         <tr>
-          <td class="review-user"><img src="<%= r.userAvatar %>" alt="avatar" referrerpolicy="no-referrer"><%= r.userName %></td>
+          <td class="review-user"><img src="<%= r.userAvatar %>" alt="avatar" referrerpolicy="no-referrer"><%= r.userName %></td><br>
           <td><%= r.createdAt.toLocaleDateString() %></td>
           <td><%= r.content %></td>
           <td><%= r.rating %></td>

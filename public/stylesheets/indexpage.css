@@ -34,12 +34,21 @@ body {
     min-width: 100px;
   }
 
-  th, td, label, #show-page, #add-review-form {
+th, td, label, #show-page, #add-review-form {
     color: yellow;
     font-size: 25px;
     text-align: center;
     margin: auto;
   }
+
+table {
+  position: relative;
+  top: 5%;
+}
+
+th {
+  color: black;
+}
   .button, a.button {
     color: green;
     background-color: lightgreen;

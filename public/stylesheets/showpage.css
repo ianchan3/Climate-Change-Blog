@@ -1,25 +1,71 @@
 body {
     background-image: url('https://s.abcnews.com/images/Technology/HT_gentoo_penguin_antarctica_2008_jt_140705_16x9_992.jpg');
     background-size: cover;
-  }
-  a {
-    color: blue;
-  }
-  nav > a:hover:not(.active) {
-    color: yellow;
-    background-color: blue;
-    padding: 30px 6px;
-  }
-  .home:hover:not(.active) {
-    background-color: blue;
-    color: yellow;
-    padding: 20px 6px 17px;
-  }
-  .icon {
-    color: yellow;
-    outline: 2px solid blue;
-  }
-  .review-user > img {
-    width: 40px;
-  }
+}
+a {
+  color: blue;
+}
+nav > a:hover:not(.active) {
+  color: yellow;
+  background-color: blue;
+  padding: 30px 6px;
+}
+.home:hover:not(.active) {
+  background-color: blue;
+  color: yellow;
+  padding: 20px 6px 17px;
+}
+.icon {
+  color: yellow;
+  outline: 2px solid blue;
+}
+.review-user > img {
+  width: 40px;
+}
+
+#show-page {
+  position: relative;
+  left: 47%;
+  top: 15%;
+  color: yellow;
+  font-size: 30px;
+}
+
+.title {
+  color: black;
+}
+
+#add-review-form {
+  position: relative;
+  left: 47%;
+  bottom: 65%;
+  font-size: 30px;
+  color: black;
+}
+
+.review-user {
+  margin: 0 0 100px 30px;
+  color: yellow;
+}
+
+td, label {
+  color: yellow;
+  font-size: 30px;
+  text-align: center;
+  padding: 0 0 0 10px;
+  margin: auto;
+}
+
+table {
+  position: relative;
+  bottom: 10%;
+}
+
+th {
+  position: relative;
   
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  margin: auto;
+}

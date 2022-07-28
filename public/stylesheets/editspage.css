@@ -2,3 +2,16 @@ body {
   background-image: url('https://www.timeforkids.com/wp-content/uploads/2018/08/GlobalWarming-HERO.jpg');
   background-size: cover;
 }
+
+#add-review-form {
+color: yellow;
+  font-size: 30px;
+  text-align: center;
+  padding: 0 0 0 10px;
+  margin: auto;
+}
+
+.rating {
+  position: relative;
+  right: 7%
+}

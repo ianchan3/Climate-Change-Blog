@@ -24,14 +24,18 @@ body {
     outline: 2px solid green;
   }
 
-  #title, #publishedDate {
-    padding: 5px 0 5px 10px;
-    
+ 
+
+
+  #new-form {
+    color: green;
+    position: relative;
+    left: 40%;
+    top: 45%;
+    font-size: 30px;
   }
 
-  label {
-    padding: 0 0 0 30px;
-  }
-  #new-form > label {
-    color: green;
+  #article-title, #title {
+    position: relative;
+    left: 4%;
   }
