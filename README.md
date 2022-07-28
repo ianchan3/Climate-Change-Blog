@@ -10,7 +10,6 @@ Feel the Heat is a online blog with the intent of raising awareness on global wa
 ## **Technologies Used**
 ![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
 ![Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express)
-![React](https://img.shields.io/badge/-React-333?style=flat&logo=react)
 ![Node](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript)
 ![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
