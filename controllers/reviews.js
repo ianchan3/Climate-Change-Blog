@@ -14,6 +14,7 @@ function update(req, res) {
       const commentSubdoc = article.reviews.id(req.params.id);
       if (!commentSubdoc.user.equals(req.user._id)) return res.redirect(`/articles/${article._id}`);
       commentSubdoc.content = req.body.content;
+      commentSubdoc.rating = req.body.rating;
       article.save(function(err) {
         res.redirect(`/articles/${article._id}`);
       });  
