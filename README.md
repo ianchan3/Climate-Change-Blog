@@ -24,6 +24,6 @@ Feel the Heat is a online blog with the intent of raising awareness on global wa
 
 
 ## :fast_forward: **Icebox Features (Next Steps)**
-- Allow users to receive notifictions to their email once a new article is posted
+- Allow users to receive notifications to their email once a new article is posted
 - Allow users to share articles that the user liked or disliked by using the social media buttons on navigation bar
 - Have two types of users: regular users and admin users to monitor/manage the website

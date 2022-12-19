@@ -19,17 +19,12 @@ const reviewSchema = new Schema({
   timestamps: true
 });
 
-const articleSchema = new Schema({
+const blogSchema = new Schema({
   title: String,
   publishedDate: {
-    type: Number,
-    default: function() {
-      return new Date().getFullYear();
-    },
-    min: 2000
     },
   reviews: [reviewSchema]
     }, {
 });
 
-module.exports = mongoose.model("Article", articleSchema);
+module.exports = mongoose.model("Blog", blogSchema);

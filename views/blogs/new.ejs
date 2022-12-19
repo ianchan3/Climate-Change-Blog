@@ -2,14 +2,14 @@
 
 <link rel="stylesheet" href="/stylesheets/newpage.css">
 
-<form id="new-form" action="/articles" method="POST">
-  <label id="article-title">Article Title:</label> 
+<form id="new-form" action="/blogs" method="POST">
+  <label id="blog-title">Blog Title:</label> 
   <input id="title" type="text" name="title">
   <div></div>
   <h1></h1>
   <label>Published Date:</label>
-  <input id="publishedDate" type="text" name="publishedDate">
-  <input type="submit" value="Add Article">
+  <input id="publishedDate" type="date" name="publishedDate">
+  <input type="submit" value="Add Blog">
 </form>
 
 <%- include("../partials/footer") %>

@@ -5,16 +5,7 @@ body {
 a {
   color: blue;
 }
-nav > a:hover:not(.active) {
-  color: yellow;
-  background-color: blue;
-  padding: 30px 6px;
-}
-.home:hover:not(.active) {
-  background-color: blue;
-  color: yellow;
-  padding: 20px 6px 17px;
-}
+
 .icon {
   color: yellow;
   outline: 2px solid blue;

@@ -13,8 +13,9 @@ require("./config/passport");
 
 var indexRouter = require('./routes/index');
 var homepagesRouter = require('./routes/homepages');
-var articlesRouter = require("./routes/articles");
+var blogsRouter = require("./routes/blogs");
 var reviewsRouter = require("./routes/reviews");
+var aboutusRouter = require("./routes/aboutus");
 
 var app = express();
 
@@ -46,7 +47,8 @@ const isLoggedIn = require("./config/auth");
 
 app.use('/', indexRouter);
 app.use('/homepages', homepagesRouter);
-app.use("/articles", articlesRouter);
+app.use("/blogs", blogsRouter);
+app.use("/aboutus", aboutusRouter);
 app.use("/", isLoggedIn, reviewsRouter);
 
 

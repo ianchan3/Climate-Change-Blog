@@ -7,25 +7,10 @@ body {
     color: green;
   }
 
-  nav > a:hover:not(.active) {
-    color: yellow;
-    background-color: green;
-    padding: 30px 6px;
-  }
-
-  .home:hover:not(.active) {
-    background-color: green;
-    color: yellow;
-    padding: 20px 6px 17px;
-  }
-
   .icon {
     color: yellow;
     outline: 2px solid green;
   }
-
- 
-
 
   #new-form {
     color: green;
@@ -35,7 +20,7 @@ body {
     font-size: 30px;
   }
 
-  #article-title, #title {
+  #blog-title, #title {
     position: relative;
     left: 4%;
   }

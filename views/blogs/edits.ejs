@@ -4,7 +4,7 @@
 
 <% if (user) { %>
   <form id="add-review-form" method="POST"
-  action="/articles/<%= article._id %>/reviews/<%= review %>?_method=put">
+  action="/blogs/<%= blog._id %>/reviews/<%= review %>?_method=put">
     <label>Review:</label>
     <textarea name="content"></textarea><br>
     <label class="rating">Rating:</label>

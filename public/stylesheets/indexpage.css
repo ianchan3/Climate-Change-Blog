@@ -5,16 +5,25 @@ body {
   a {
     color: lightgreen;
   }
-  nav > a:hover:not(.active) {
-    color: yellow;
-    background-color: green;
-    padding: 30px 6px;
-  }
-  .home:hover:not(.active) {
-    background-color: green;
-    color: yellow;
-    padding: 20px 6px 17px;
-  }
+ 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: red;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  background-color: blue;
+  height: 38rem;
+  width: 80rem;
+  padding-bottom: 3rem;
+}
+
+
   .icon {
     color: yellow;
     outline: 2px solid lightgreen;

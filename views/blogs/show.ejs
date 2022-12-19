@@ -3,15 +3,15 @@
 <link rel="stylesheet" href="/stylesheets/showpage.css">
 
 <section id="show-page">
-  <div class="title">Article Title:</div>
-  <div><%= article.title %></div>
+  <div class="title">Blog Title:</div>
+  <div><%= blog.title %></div>
   <div class="title">Published Date:</div>
-  <div><%= article.publishedDate %></div>
+  <div><%= blog.publishedDate %></div>
 </section>
 
 <% if (user) { %>
   <form id="add-review-form" method="POST"
-    action="/articles/<%= article._id %>/reviews">
+    action="/blogs/<%= blog._id %>/reviews">
     <label>Review:</label><br>
     <textarea name="content"></textarea><br>
     <label>Rating:</label><br>
@@ -26,7 +26,7 @@
   </form>
 <% } %>
 
-<% if (article.reviews.length) { %>
+<% if (blog.reviews.length) { %>
   <table>
     <thead>
       <tr>
@@ -38,7 +38,7 @@
     </thead>
     <tbody>
       <% let sum = 0; %>
-      <% article.reviews.forEach(function(r) { %>
+      <% blog.reviews.forEach(function(r) { %>
         <% sum += r.rating %>
         <tr>
           <td class="review-user"><img src="<%= r.userAvatar %>" alt="avatar" referrerpolicy="no-referrer"><%= r.userName %></td><br>
@@ -50,7 +50,7 @@
               <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
                 <button type="submit">Delete Button</button>
               </form>
-              <a href="/articles/<%= r._id %>/reviews/edit">
+              <a href="/blogs/<%= r._id %>/reviews/edit">
                 <button type="submit">Edit</button>
               </a>
             <% } %>
@@ -60,7 +60,7 @@
         <tr>
           <td></td>
           <td colspan="3"> </td>
-          <td><%= (sum / article.reviews.length).toFixed(2) %></td>
+          <td><%= (sum / blog.reviews.length).toFixed(2) %></td>
         </tr>
     </tbody>
   </table>

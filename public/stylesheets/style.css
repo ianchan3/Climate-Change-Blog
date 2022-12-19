@@ -24,6 +24,15 @@ nav > h2 {
   margin-right: auto;
 }
 
+nav .nav {
+  margin-right: 2rem;
+}
+
+nav .icons, .icons a {
+  margin-right: 1.5rem;
+}
+
+
 a {
   color: lightblue;
   font-size: 20px;
@@ -47,11 +56,14 @@ nav {
   justify-content: flex-end;
 }
 
-nav > a:hover:not(.active) {
+
+nav > a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  font-weight: bold;
   color: yellow;
-  background-color: lightblue;
-  padding: 30px 6px;
 }
+
 
 nav > a.active {
   color: white;
@@ -59,9 +71,10 @@ nav > a.active {
 }
 
 .home:hover:not(.active) {
-  background-color: lightblue;
   color: yellow;
-  padding: 20px 6px 17px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
 }
 
 @keyframes shake {
