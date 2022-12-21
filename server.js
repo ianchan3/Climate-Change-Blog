@@ -16,6 +16,7 @@ var homepagesRouter = require('./routes/homepages');
 var blogsRouter = require("./routes/blogs");
 var reviewsRouter = require("./routes/reviews");
 var aboutusRouter = require("./routes/aboutus");
+var newsRouter = require("./routes/news");
 
 var app = express();
 
@@ -49,6 +50,7 @@ app.use('/', indexRouter);
 app.use('/homepages', homepagesRouter);
 app.use("/blogs", blogsRouter);
 app.use("/aboutus", aboutusRouter);
+app.use("/news", newsRouter);
 app.use("/", isLoggedIn, reviewsRouter);
 
 

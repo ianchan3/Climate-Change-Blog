@@ -1,51 +1,53 @@
 <%- include('../partials/header') %>
 
 <link rel="stylesheet" href="/stylesheets/showpage.css">
-
+<div class="container">
 <section id="show-page">
-  <div class="title">Blog Title:</div>
-  <div><%= blog.title %></div>
-  <div class="title">Published Date:</div>
+  <div class="title">Published Date</div>
+  <div class="title">Blog Title</div>
   <div><%= blog.publishedDate %></div>
+  <div><%= blog.title %></div>
 </section>
+</div>
 
 <% if (user) { %>
-  <form id="add-review-form" method="POST"
+  <div class="add-review-form">
+    <form method="POST"
     action="/blogs/<%= blog._id %>/reviews">
-    <label>Review:</label><br>
-    <textarea name="content"></textarea><br>
-    <label>Rating:</label><br>
+    <input id="review-text" name="content"></input>
+  </div>
+  <div class="rating">
+    <label>Rating:</label>
     <select name="rating">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5" selected>5</option>
+      <option value="1">1 (Horrible)</option>
+      <option value="2">2 (Not Good)</option>
+      <option value="3">3 (OK)</option>
+      <option value="4">4 (Good)</option>
+      <option value="5" selected>5 (Amazing)</option>
     </select>
     <input type="submit" placeholder="value" value="Add Review">
-  </form>
+  </div>
+</form>
 <% } %>
 
 <% if (blog.reviews.length) { %>
-  <table>
-    <thead>
-      <tr>
-        <th>User</th>
-        <th>Date</th>
-        <th>Review</th>
-        <th>Rating</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% let sum = 0; %>
-      <% blog.reviews.forEach(function(r) { %>
+  <div class="review-header">
+    <h1>User</h1>
+    <h1>Date</h1>
+    <h1>Review</h1>
+    <h1>Rating</h1>
+    <h1>Delete</h1>
+    <h1>Edit?</h1>
+  </div>
+    <% let sum = 0; %>
+    <% blog.reviews.forEach(function(r) { %>
         <% sum += r.rating %>
-        <tr>
-          <td class="review-user"><img src="<%= r.userAvatar %>" alt="avatar" referrerpolicy="no-referrer"><%= r.userName %></td><br>
-          <td><%= r.createdAt.toLocaleDateString() %></td>
-          <td><%= r.content %></td>
-          <td><%= r.rating %></td>
-          <td>
+        <div class="user-review">
+          <h1 class="review-user"><img src="<%= r.userAvatar %>" alt="avatar" referrerpolicy="no-referrer"><%= r.userName %></h1>
+          <h1><%= r.createdAt.toLocaleDateString() %></h1>
+          <h1><%= r.content %></h1>
+          <h1><%= r.rating %></h1>
+        
             <% if (user?._id.equals(r.user) ) { %>
               <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
                 <button type="submit">Delete Button</button>
@@ -54,18 +56,12 @@
                 <button type="submit">Edit</button>
               </a>
             <% } %>
-          </td>
-        </tr>
+          </div>
         <% }); %>
-        <tr>
-          <td></td>
-          <td colspan="3"> </td>
-          <td><%= (sum / blog.reviews.length).toFixed(2) %></td>
-        </tr>
-    </tbody>
-  </table>
+          <h1><%= (sum / blog.reviews.length).toFixed(2) %></h1>
 <% } else { %>
   <h5>No Reviews Yet</h5>
 <% } %>
+
 
 <%- include('../partials/footer') %>

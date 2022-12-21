@@ -1,62 +1,105 @@
 body {
     background-image: url('https://s.abcnews.com/images/Technology/HT_gentoo_penguin_antarctica_2008_jt_140705_16x9_992.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
+
 a {
   color: blue;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
 }
 
 .icon {
   color: yellow;
   outline: 2px solid blue;
 }
+
 .review-user > img {
   width: 40px;
 }
 
 #show-page {
-  position: relative;
-  left: 45%;
-  top: 15%;
-  color: yellow;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  color: blue;
   font-size: 30px;
+  background-color: red;
+}
+
+.add-review-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
 }
 
 .title {
   color: black;
+  text-decoration: underline;
 }
 
-#add-review-form {
-  position: relative;
-  left: 47%;
-  bottom: 65%;
-  font-size: 30px;
-  color: black;
-}
-
-.review-user {
+/* .review-user {
   margin: 0 0 100px 30px;
   color: yellow;
+} */
+
+.review-header, .user-review {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
 }
 
-td, label {
-  color: yellow;
-  font-size: 30px;
+.review-header h1, .user-review > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 0 0 0 10px;
-  margin: auto;
 }
 
-table {
-  position: relative;
-  bottom: 10%;
+.review-header h1 {
+  text-decoration: underline;
 }
 
-th {
-  position: relative;
-  
-  color: black;
-  font-size: 25px;
+.user-review button {
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 5rem;
+  height: 3rem;
+}
+
+#review-text {
+  height: 20rem;
+  width: 50rem;
+  background-color: blue;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating > * {
+  margin: 10px 10px;
+}
+
+.rating select, .rating input {
+  width: 8rem;
+  height: 2rem;
   text-align: center;
-  margin: auto;
+  color: blue;
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 5px;
+
 }
+
