@@ -1,14 +1,32 @@
+body {
+  background-color: lightgreen;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
-  background-color: blue;
 }
 
 .blogs {
-  height: 35rem;
-  width: 80rem;
-  background-color: red;
+  height: 100%;
+  width: 50rem;
   text-align: center;
+}
+
+.mission {
+  padding: 1.5rem 0 ;
+}
+
+.humanity-goal {
+  padding: 1.5rem 0;
+}
+
+.humanity-goal > * {
+  padding-bottom: 1rem;
+
+}
+
+.humanity-goal h1, .mission h1 {
+  text-decoration: underline;
 }

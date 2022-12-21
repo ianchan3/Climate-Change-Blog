@@ -34,7 +34,7 @@ nav .icons, .icons a {
 
 
 a {
-  color: lightblue;
+  color: blue;
   font-size: 20px;
   text-decoration: none;
 }
@@ -46,8 +46,10 @@ a {
   height: 34px;
 }
 
+
 .nav img {
   height: 30px;
+  padding-left: 15px;
 } 
 
 nav {
@@ -109,7 +111,8 @@ nav > a.active {
   text-decoration: none;
   font-size: 26px;
   border-radius: 50%;
-  outline: 2px solid lightblue;
+  outline: 2px solid blue;
+  background-color: black;
   transition-property:
       outline-offset, outline-color,
       background-color;
