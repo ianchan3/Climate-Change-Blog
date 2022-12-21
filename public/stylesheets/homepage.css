@@ -1,22 +1,22 @@
-/* body {
+body {
     background-image: url('https://s.w-x.co//util/image/w/polarbear4.jpg?crop=16:9&width=980&format=pjpg&auto=webp&quality=60');
     background-size: cover;
-  } */
+  }
 
-  body {
-    margin: 0;
-    font-family: Arial;
-    font-size: 17px;
-  }
-  
-  #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 90rem;
-    z-index: -1;
-  
-  }
+/* body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 90rem;
+  z-index: -1;
+
+} */
   
   .content {
     position: fixed;
