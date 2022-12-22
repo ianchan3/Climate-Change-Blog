@@ -1,36 +1,36 @@
 body {
-    background-image: url('https://s.abcnews.com/images/Technology/HT_gentoo_penguin_antarctica_2008_jt_140705_16x9_992.jpg');
-    background-size: cover;
+    background-image: url('https://climate.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMGRZQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--2348ddd47b83e89f2dccbd9ee7beab57d91ef263/banner-science-1600x500.jpeg');
     background-repeat: no-repeat;
+    background-size: 1500px 500px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-a {
-  color: blue;
-}
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
 }
 
-.icon {
-  color: yellow;
-  outline: 2px solid blue;
-}
 
 .review-user > img {
   width: 40px;
 }
 
+#header {
+  text-align: center;
+  padding-bottom: 5rem;
+  padding-top: 20rem;
+  
+}
+
 #show-page {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  color: blue;
   font-size: 30px;
-  background-color: red;
 }
 
 .add-review-form {
@@ -45,9 +45,10 @@ a {
 }
 
 
+
 .review-header, .user-review {
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(5,1fr);
 }
 
 .review-header h1, .user-review > * {
@@ -70,12 +71,34 @@ a {
 }
 
 #review-text {
-  height: 20rem;
-  width: 50rem;
-  background-color: blue;
+  height: 10rem;
+  width: 25rem;
   border: 2px solid black;
   border-radius: 5px;
+  margin: 1.5rem 0;
+  resize: none;
 }
+
+.review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-bottom: 5rem;
+  border: 1px solid black;
+}
+
+.comment-review {
+  text-align: center;
+}
+
+
+#like {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
 
 .rating {
   display: flex;

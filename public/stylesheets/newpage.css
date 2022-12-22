@@ -7,20 +7,23 @@ body {
     color: green;
   }
 
-  .icon {
-    color: yellow;
-    outline: 2px solid green;
-  }
 
-  #new-form {
-    color: green;
-    position: relative;
-    left: 40%;
-    top: 45%;
-    font-size: 30px;
-  }
 
-  #blog-title, #title {
-    position: relative;
-    left: 4%;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.new-blog {
+  background-color: blue;
+  height: 20rem;
+  width: 50rem;
+}
+
+#new-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}

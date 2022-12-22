@@ -1,17 +1,19 @@
 <%- include("../partials/header") %>
 
 <link rel="stylesheet" href="/stylesheets/newpage.css">
+<div class="container">
+  <div class="new-blog">
 
 <form id="new-form" action="/blogs" method="POST">
   <label id="blog-title">Blog Title:</label> 
-  <input id="title" type="text" name="title">
   <label>Topic</label>
-  <input id="topic" type="text" name="topic">
-  <div></div>
-  <h1></h1>
   <label>Published Date:</label>
+  <input id="title" type="text" name="title">
+  <input id="topic" type="text" name="topic">
   <input id="publishedDate" type="date" name="publishedDate">
   <input type="submit" value="Add Blog">
 </form>
+</div>
+</div>
 
 <%- include("../partials/footer") %>
