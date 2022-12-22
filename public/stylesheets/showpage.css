@@ -37,7 +37,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: blue; */
 }
 
 .title {
@@ -45,10 +44,6 @@ a {
   text-decoration: underline;
 }
 
-/* .review-user {
-  margin: 0 0 100px 30px;
-  color: yellow;
-} */
 
 .review-header, .user-review {
   display: grid;
@@ -100,6 +95,16 @@ a {
   background-color: yellow;
   border: 2px solid black;
   border-radius: 5px;
-
 }
 
+h5 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+#one {
+  padding-bottom: 1rem;
+}

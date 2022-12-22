@@ -8,9 +8,9 @@ const reviewSchema = new Schema({
   },
   rating: {
     type: Number,
-    min: 1,
-    max: 5,
-    default: 5
+    min: -1,
+    max: 1,
+    default: 0
   },
   user: {type: Schema.Types.ObjectId, ref: 'User'},
   userName: String,
@@ -21,6 +21,7 @@ const reviewSchema = new Schema({
 
 const blogSchema = new Schema({
   title: String,
+  topic: String,
   publishedDate: {
     },
   reviews: [reviewSchema]

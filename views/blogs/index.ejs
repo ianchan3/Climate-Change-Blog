@@ -5,15 +5,21 @@
 
 <div class="container">
   <div class="blogs">
+    <h1 class="talk">Let's Talk About Climate Change</h1>
+    <div class="topics">
+      <h1>Topic</h1>
       <h1>Blogs</h1>
       <h1>Date Created</h1>
-      <button><a class="button" href="/blogs/new">Write Something Interesting?</a></button>
-        <% blogs.forEach(function(a) { %>
-          <h1><%= a.title %></h1>
-          <h1><%= a.publishedDate %></h1>
-          <button><a class="button" href="/blogs/<%= a._id %>">JOIN CONVERSATION</a></button>
-          <% }); %>
-        </div>
+      <h1></h1>
+      <% blogs.forEach(function(a) { %>
+        <h1 class="new-input"><%= a.topic %></h1>
+        <h1 class="new-input"><%= a.title %></h1>
+        <h1 class="new-input"><%= a.publishedDate %></h1>
+        <button class="new-input"><a class="button" href="/blogs/<%= a._id %>">JOIN CONVERSATION</a></button>
+        <% }); %>
       </div>
+    </div>
+  </div>
+  <button id="new-blog"><a class="button" href="/blogs/new">Write Something Interesting?</a></button>
   
 <%- include('../partials/footer') %>

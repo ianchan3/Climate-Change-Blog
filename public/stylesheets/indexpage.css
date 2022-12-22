@@ -1,6 +1,10 @@
 body {
-  background-image: url('https://media.istockphoto.com/photos/climate-change-from-drought-to-green-growth-picture-id1339138376?b=1&k=20&m=1339138376&s=170667a&w=0&h=LkfiOLl4Heo9eBEgrQNfQUr7UJ5Q0Cr0jufF2RXz_uo=');
-  background-size: cover;
+  background-image: url('https://climate.nasa.gov/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcnNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--36c00e11e2cd18e35f2f5d802d627f6061100fee/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MWm05eWJXRjBPZ2wzWldKdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--308d105b858fde2aa7c2bd953e87f719e2dd73bb/1266_banner-solutions-1600x500.jpg?content_type=image%2Fwebp&disposition=inline');
+  background-repeat: no-repeat;
+  background-size: 1500px 500px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   }
  
 .container {
@@ -11,10 +15,24 @@ body {
 
 .blogs {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   height: 38rem;
   width: 75rem;
   text-align: center;
+}
+
+.blogs .talk {
+  padding-top: 19.7rem;
+  padding-bottom: 5rem;
+  color: white;
+}
+
+.topics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.new-input {
+  margin-bottom: 3rem;
 }
 
 .blogs button {
@@ -34,4 +52,11 @@ body {
 
 button {
   margin-top: 1rem;
+}
+
+#new-blog {
+  margin: 10rem 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }

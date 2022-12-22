@@ -19,11 +19,10 @@
   <div class="rating">
     <label>Rating:</label>
     <select name="rating">
-      <option value="1">1 (Horrible)</option>
-      <option value="2">2 (Not Good)</option>
-      <option value="3">3 (OK)</option>
-      <option value="4">4 (Good)</option>
-      <option value="5" selected>5 (Amazing)</option>
+      <option value="-1">-1 (Dislike)</option>
+      <option value="0" selected>0 (No Vote)</option>
+      <option value="1">+1 (Like)</option>
+
     </select>
     <input type="submit" placeholder="value" value="Add Review">
   </div>
@@ -41,7 +40,13 @@
   </div>
     <% let sum = 0; %>
     <% blog.reviews.forEach(function(r) { %>
-        <% sum += r.rating %>
+      <% if (r.rating === -1) { %>
+        <% sum -= 1 %>
+        <% } else if (r.rating === +1) { %>
+        <% sum += 1 %>
+        <% } else { %>
+          <% sum += 0 %>
+          <% } %>
         <div class="user-review">
           <h1 class="review-user"><img src="<%= r.userAvatar %>" alt="avatar" referrerpolicy="no-referrer"><%= r.userName %></h1>
           <h1><%= r.createdAt.toLocaleDateString() %></h1>
@@ -58,9 +63,10 @@
             <% } %>
           </div>
         <% }); %>
-          <h1><%= (sum / blog.reviews.length).toFixed(2) %></h1>
+          <h1 id="like">This post has  <%= sum %> likes</h1>
 <% } else { %>
   <h5>No Reviews Yet</h5>
+  <h5 id="one">Want to be the first one?</h5>
 <% } %>
 
 
