@@ -1,17 +1,19 @@
 <%- include("../partials/header") %>
 
 <link rel="stylesheet" href="/stylesheets/newpage.css">
+<h1 id="new-blog">New Blog</h1>
 <div class="container">
   <div class="new-blog">
 
 <form id="new-form" action="/blogs" method="POST">
-  <label id="blog-title">Blog Title:</label> 
-  <label>Topic</label>
-  <label>Published Date:</label>
-  <input id="title" type="text" name="title">
-  <input id="topic" type="text" name="topic">
-  <input id="publishedDate" type="date" name="publishedDate">
-  <input type="submit" value="Add Blog">
+  <div id="blog-title">Blog Title:</div> 
+  <textarea id="title" type="text" name="title"></textarea>
+  <div>Conversation Topic:</div>
+  <textarea id="topic" type="text" name="topic"></textarea>
+  <div>Published Date:</div>
+  <textarea id="publishedDate" type="date" name="publishedDate"></textarea>
+  <div></div>
+  <input id="submit" type="submit" value="Add Blog">
 </form>
 </div>
 </div>
