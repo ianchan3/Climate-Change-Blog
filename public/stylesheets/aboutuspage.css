@@ -1,6 +1,13 @@
 body {
-  background-color: lightgreen;
+  background-image: url("https://climate.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMjlZQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6a285e4dc2be73d7a37f1d230fe5222aff4a82f1/about_us_banner.jpeg");
+  background-repeat: no-repeat;
+  background-size: 1500px 500px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
 
 .container {
   display: flex;
@@ -12,6 +19,12 @@ body {
   height: 100%;
   width: 50rem;
   text-align: center;
+}
+
+.blogs > h1 {
+  padding-top: 20rem;
+  padding-bottom: 5rem;
+  color: white;
 }
 
 .mission {

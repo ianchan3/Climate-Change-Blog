@@ -1,8 +1,11 @@
 body {
+  background-image: url("https://climate.nasa.gov/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7eb25f16a2523b655b26a4b751b9f7428f995fe5/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MWm05eWJXRjBPZ2wzWldKdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--308d105b858fde2aa7c2bd953e87f719e2dd73bb/1268_banner-articles-1600x500.jpg?content_type=image%2Fwebp&disposition=inline");
+  background-repeat: no-repeat;
+  background-size: 1500px 500px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: lightgreen;
+  
 }
 
 .container {
@@ -14,12 +17,14 @@ body {
 .news-articles {
   width: 50rem;
   height: 100%;
-  padding-top: 2rem;
+  padding-top: 1rem;
   text-align: center;
 }
 
 .news-articles h1 {
-  text-decoration: underline;
+  padding-top: 19rem;
+  padding-bottom: 5rem;
+  color: white;
 }
 
 .news-articles div {
@@ -33,7 +38,7 @@ body {
 }
 
 .news-articles a:hover {
-  color: yellow;
+  color: purple;
   text-decoration: underline;
 }
 

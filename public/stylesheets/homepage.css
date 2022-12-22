@@ -1,6 +1,7 @@
 body {
     background-image: url('https://s.w-x.co//util/image/w/polarbear4.jpg?crop=16:9&width=980&format=pjpg&auto=webp&quality=60');
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 1500px 600px;
   }
 
 /* body {
@@ -71,9 +72,4 @@ h3 {
   margin: 20px 0 10px 20px;
 }
 
-a {
-  color: yellow;
-  font-size: 20px;
-  text-decoration: none;
-}
 

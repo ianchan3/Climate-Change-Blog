@@ -5,27 +5,15 @@
 
 <div class="container">
   <div class="blogs">
-    <table id="list">
-      <thead>
-        <tr>
-          <th>Interesting Blogs</th>
-          <th>Published Date</th>
-          <th>Get More Info</th>
-          <td><a class="button" href="/blogs/new">New Blog</a></td>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
+      <h1>Blogs</h1>
+      <h1>Date Created</h1>
+      <button><a class="button" href="/blogs/new">Write Something Interesting?</a></button>
         <% blogs.forEach(function(a) { %>
-          <tr>
-            <td><%= a.title %></td>
-            <td><%= a.publishedDate %></td>
-            <td><a class="button" href="/blogs/<%= a._id %>">DETAILS</a></td>
-          </tr>
+          <h1><%= a.title %></h1>
+          <h1><%= a.publishedDate %></h1>
+          <button><a class="button" href="/blogs/<%= a._id %>">JOIN CONVERSATION</a></button>
           <% }); %>
-        </tbody>
-    </table>
-  </div>
-</div>
+        </div>
+      </div>
   
 <%- include('../partials/footer') %>

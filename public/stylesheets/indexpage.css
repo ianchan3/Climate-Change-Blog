@@ -1,64 +1,37 @@
 body {
-    background-image: url('https://media.istockphoto.com/photos/climate-change-from-drought-to-green-growth-picture-id1339138376?b=1&k=20&m=1339138376&s=170667a&w=0&h=LkfiOLl4Heo9eBEgrQNfQUr7UJ5Q0Cr0jufF2RXz_uo=');
-    background-size: cover;
-  }
-  a {
-    color: lightgreen;
+  background-image: url('https://media.istockphoto.com/photos/climate-change-from-drought-to-green-growth-picture-id1339138376?b=1&k=20&m=1339138376&s=170667a&w=0&h=LkfiOLl4Heo9eBEgrQNfQUr7UJ5Q0Cr0jufF2RXz_uo=');
+  background-size: cover;
   }
  
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: red;
 }
 
 .blogs {
   display: grid;
-  grid-template-columns: repeat(3 1fr);
-  background-color: blue;
+  grid-template-columns: repeat(3, 1fr);
   height: 38rem;
-  width: 80rem;
-  padding-bottom: 3rem;
+  width: 75rem;
+  text-align: center;
+}
+
+.blogs button {
+  text-align: center;
+  height: 3rem;
+  width: 10rem;
+  background-color: lightgreen;
+  border: 3px solid black;
+  border-radius: 10px;
 }
 
 
-  .icon {
-    color: yellow;
-    outline: 2px solid lightgreen;
-  }
-  #list a {
-    border-radius: 4px;
-    background-color: lightgreen;
-    padding: 4px;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  #list a:hover {
-    background-color: white;
-  }
-  #list td:nth-child(2), #list td:nth-child(3){
-    min-width: 100px;
-  }
-
-th, td, label, #show-page, #add-review-form {
-    color: yellow;
-    font-size: 25px;
-    text-align: center;
-    margin: auto;
-  }
-
-table {
-  position: relative;
-  top: 5%;
+.button {
+  color: green;
+  font-size: 1rem;
 }
 
-th {
-  color: black;
+button {
+  margin-top: 1rem;
 }
-  .button, a.button {
-    color: green;
-    background-color: lightgreen;
-  }
