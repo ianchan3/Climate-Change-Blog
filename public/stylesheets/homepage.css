@@ -1,10 +1,11 @@
-
 video {
   z-index: -1;
   position: absolute;
 }
 
-
+body {
+  overflow-x: hidden;
+}
 
 .content {
   position: fixed;
