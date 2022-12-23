@@ -32,10 +32,10 @@ body {
 }
 
 .new-input {
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
-.blogs button {
+.blogs button, #new-blog {
   text-align: center;
   height: 3rem;
   width: 10rem;
@@ -46,7 +46,7 @@ body {
 
 
 .button {
-  color: green;
+  color: black;
   font-size: 1rem;
 }
 
@@ -55,8 +55,9 @@ button {
 }
 
 #new-blog {
-  margin: 10rem 0;
-  position: fixed;
+  margin-right: 15.7rem;
+  margin-bottom: 7rem;
+  position: absolute;
   bottom: 0;
   right: 0;
 }
