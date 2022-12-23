@@ -1,17 +1,56 @@
 body {
-  background-image: url('https://www.timeforkids.com/wp-content/uploads/2018/08/GlobalWarming-HERO.jpg');
-  background-size: cover;
+  background-image: url('https://i.natgeofe.com/n/255c6931-5ee9-49e6-b280-3f85cca69817/01ice-sea-level.jpg');
+  background-repeat: no-repeat;
+  background-size: 1500px 500px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  padding-bottom: 5rem;
+  padding-top: 20rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
 }
 
 #add-review-form {
-color: yellow;
-  font-size: 30px;
-  text-align: center;
-  padding: 0 0 0 10px;
-  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 
-.rating {
-  position: relative;
-  right: 7%
+#add-review-form > * {
+  padding: 0 1rem;
+  margin: 1rem 1rem;
+}
+
+label {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+button {
+  margin-bottom: 2rem;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 10px;
+}
+
+select, textarea {
+  width: 20rem;
+  height: 4rem;
+  border-radius: 10px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
 }

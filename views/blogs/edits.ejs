@@ -1,21 +1,26 @@
 <%- include('../partials/header') %>
 
 <link rel="stylesheet" href="/stylesheets/editspage.css">
+<h1>Edit Your Comment</h1>
+<div class="container">
 
 <% if (user) { %>
   <form id="add-review-form" method="POST"
   action="/blogs/<%= blog._id %>/reviews/<%= review %>?_method=put">
-    <label>Review:</label>
-    <textarea name="content"></textarea><br>
-    <label class="rating">Rating:</label>
-    <select name="rating">
-      <option value="1">1</option>
-      <option value="0">0</option>
-      <option value="-1">-1</option>
-
-    </select>
-    <input type="submit" value="Add Review">
-  </form>
+  <label class="rating">Rating</label>
+  <label>Review</label>
+  <select name="rating">
+    <option value="-1">-1 (Dislike)</option>
+    <option value="0">0 (No Vote)</option>
+    <option value="1">1 (Like)</option>
+  </select>
+  <textarea name="content"></textarea><br>
+</form>
 <% } %>
+</div>
+<div class="submit-button">
+  <button id="submit-button" type="submit" value="Add Review">Add Review</button>
+
+</div>
 
 <%- include('../partials/footer') %>
