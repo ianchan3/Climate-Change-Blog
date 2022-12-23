@@ -1,32 +1,19 @@
-body {
-    background-image: url('https://s.w-x.co//util/image/w/polarbear4.jpg?crop=16:9&width=980&format=pjpg&auto=webp&quality=60');
-    background-repeat: no-repeat;
-    background-size: 1500px 600px;
-  }
 
-/* body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
+video {
+  z-index: -1;
+  position: absolute;
 }
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  width: 90rem;
-  z-index: -1;
 
-} */
-  
-  .content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-  }
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
 
 .circle1, .circle2, .circle3, .circle4, .circle5, .circle6 {
   border-radius: 50%;
@@ -71,5 +58,4 @@ h3 {
   font-size: 18.2px;
   margin: 20px 0 10px 20px;
 }
-
 

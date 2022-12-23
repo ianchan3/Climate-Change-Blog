@@ -5,8 +5,9 @@
 <div class="container">
 
 <% if (user) { %>
-  <form id="add-review-form" method="POST"
+  <form method="POST"
   action="/blogs/<%= blog._id %>/reviews/<%= review %>?_method=put">
+  <div id="add-review-form">
   <label class="rating">Rating</label>
   <label>Review</label>
   <select name="rating">
@@ -15,12 +16,13 @@
     <option value="1">1 (Like)</option>
   </select>
   <textarea name="content"></textarea><br>
-</form>
-<% } %>
 </div>
 <div class="submit-button">
-  <button id="submit-button" type="submit" value="Add Review">Add Review</button>
-
+    <button id="submit-button" type="submit" value="Add Review">Add Review</button>
+  
+  </div>
+</form>
+<% } %>
 </div>
 
 <%- include('../partials/footer') %>

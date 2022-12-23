@@ -7,6 +7,10 @@ router.get('/', function(req, res, next) {
   res.render('homepages/index');
 });
 
+router.get('/', function(req, res, next) {
+  res.render('ocean.mp4');
+});
+
 router.get('/auth/google', passport.authenticate(
   'google',
   {
