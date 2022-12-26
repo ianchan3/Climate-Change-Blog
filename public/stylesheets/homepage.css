@@ -55,9 +55,24 @@ body {
   z-index: 9;
 }
 
+.circle1:hover, .circle2:hover, .circle3:hover, .circle4:hover, .circle5:hover, .circle6:hover {
+  background-color: rgba(12, 12, 12, 0.5);
+}
+
+
 h3 {
   color: white;
   font-size: 18.2px;
   margin: 20px 0 10px 20px;
 }
 
+.circle-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  text-align: center;
+}
+
+.circle-container h1, .circle-container div, .circle-container h3 {
+  margin: 0;
+}
