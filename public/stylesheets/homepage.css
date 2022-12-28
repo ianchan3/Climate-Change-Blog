@@ -40,7 +40,7 @@ body {
   top: 50%;
   left: 5px;
   right: 5px;
-  z-index: 9;
+  z-index: 1;
 }
 .circle1::before, .circle2::before, .circle3::before, .circle4::before, .circle5::before, .circle6::before {
   content: " ";
@@ -52,7 +52,7 @@ body {
   left: 50%;
   top: 5px;
   bottom: 5px;
-  z-index: 9;
+  z-index: 1;
 }
 
 .circle1:hover, .circle2:hover, .circle3:hover, .circle4:hover, .circle5:hover, .circle6:hover {
@@ -64,7 +64,6 @@ body {
 }
 
 #circle1, #circle2, #circle3, #circle4, #circle5, #circle6 {
-  background-color: rgb(255, 255, 255, 0.3);
   max-width: 450px;
 }
 
@@ -101,7 +100,7 @@ h2 {
   width: 80%;
   max-width: 60rem;
   background-color: #eee;
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 2rem;
   border: 1px solid #777;
   position: relative;
