@@ -107,6 +107,38 @@ h2 {
   position: relative;
   text-align: center;
   animation: slide ease 0.8s;
-  z-index: 9;
-
+  z-index: 999;
 }
+
+@keyframes slide {
+  0% {
+    transform: translateY(-30rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.close1, .close2, .close3, .close4, .close5, .close6 {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: red;
+  font-size: 2rem;
+  cursor: pointer;
+  border: 1.5px solid black;
+  padding: 0 5px;
+}
+
+/* .slide-up {
+  animation: slide-up ease 0.8s;
+} */
+/* 
+@keyframes slide-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50rem);
+  }
+} */
