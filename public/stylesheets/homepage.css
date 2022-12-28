@@ -128,51 +128,51 @@ h2 {
 }
 
 #circle1 h1, .circle1:before, .circle1:after {
-  color: #FAB460;
+  color: #f79d31;
 }
 
 #circle2 h1 {
-  color: #F1796D;
+  color: #f26a5d;
 }
 
 #circle3 h1 {
-  color: #89A4D4;
+  color: #5a90ec;
 }
 
 #circle4 h1 {
-  color: #A18FDB;
+  color: rgb(196, 182, 244);
 }
 
 #circle5 h1 {
-  color: #6B9FB0;
+  color: #68a6ba;
 }
 
 #circle6 h1 {
-  color: #4D9BE3;
+  color: rgb(237, 237, 20);
 }
 
 .circle1:before, .circle1:after {
-  background-color: #FAB460;
+  background-color: #f79d31;
 }
 
 .circle2:before, .circle2:after {
-  background-color: #F1796D;
+  background-color: #f26a5d;
 }
 
 .circle3:before, .circle3:after {
-  background-color: #89A4D4;
+  background-color: #5a90ec;
 }
 
 .circle4:before, .circle4:after {
-  background-color: #A18FDB;
+  background-color: rgb(196, 182, 244);
 }
 
 .circle5:before, .circle5:after {
-  background-color: #6B9FB0;
+  background-color: #68a6ba;
 }
 
 .circle6:before, .circle6:after {
-  background-color: #4D9BE3;
+  background-color: rgb(237, 237, 20);;
 }
 
 /* .slide-up {
