@@ -34,7 +34,6 @@ body {
   content: " ";
   position: absolute;
   display: block;
-  background-color: blue;
   height: 7px;
   margin-top: -4px;
   top: 50%;
@@ -46,7 +45,6 @@ body {
   content: " ";
   position: absolute;
   display: block;
-  background-color: blue;
   width: 7px;
   margin-left: -4px;
   left: 50%;
@@ -127,6 +125,54 @@ h2 {
   cursor: pointer;
   border: 1.5px solid black;
   padding: 0 5px;
+}
+
+#circle1 h1, .circle1:before, .circle1:after {
+  color: #FAB460;
+}
+
+#circle2 h1 {
+  color: #F1796D;
+}
+
+#circle3 h1 {
+  color: #89A4D4;
+}
+
+#circle4 h1 {
+  color: #A18FDB;
+}
+
+#circle5 h1 {
+  color: #6B9FB0;
+}
+
+#circle6 h1 {
+  color: #4D9BE3;
+}
+
+.circle1:before, .circle1:after {
+  background-color: #FAB460;
+}
+
+.circle2:before, .circle2:after {
+  background-color: #F1796D;
+}
+
+.circle3:before, .circle3:after {
+  background-color: #89A4D4;
+}
+
+.circle4:before, .circle4:after {
+  background-color: #A18FDB;
+}
+
+.circle5:before, .circle5:after {
+  background-color: #6B9FB0;
+}
+
+.circle6:before, .circle6:after {
+  background-color: #4D9BE3;
 }
 
 /* .slide-up {
