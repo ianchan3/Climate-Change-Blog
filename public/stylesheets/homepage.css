@@ -54,7 +54,7 @@ body {
 }
 
 .circle1:hover, .circle2:hover, .circle3:hover, .circle4:hover, .circle5:hover, .circle6:hover {
-  background-color: rgba(12, 12, 12, 0.5);
+  background-color: rgba(12, 12, 12, 0.80);
 }
 
 .circle1, .circle2, .circle3, .circle4, .circle5, .circle6 {
@@ -68,7 +68,7 @@ body {
 h2 {
   color: white;
   font-size: 1.5rem;
-  /* margin: 20px 0 10px 20px; */
+  padding-bottom: 1rem;
 }
 
 .circle-container {
@@ -76,11 +76,18 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   text-align: center;
+  padding: 0;
 }
 
-.circle-container h1, .circle-container div, .circle-container h3 {
+.circle-container #circle4, .circle-container #circle5, .circle-container #circle6 {
+  margin-bottom: 4.5rem;
+}
+
+.circle-container h1, .circle-container div, .circle-container h2 {
   margin: 0;
 }
+
+
 
 .model1, .model2, .model3, .model4, .model5, .model6 {
   display: none;
@@ -97,7 +104,7 @@ h2 {
 .model-content {
   width: 80%;
   max-width: 60rem;
-  background-color: #eee;
+  background-color: rgb(227, 223, 223);
   margin: 5% auto;
   padding: 2rem;
   border: 1px solid #777;
@@ -105,6 +112,11 @@ h2 {
   text-align: center;
   animation: slide ease 0.8s;
   z-index: 999;
+  border: 3px solid blue;
+}
+
+div img {
+  border: 2px solid black;
 }
 
 @keyframes slide {
@@ -174,6 +186,30 @@ h2 {
 
 .circle6:before, .circle6:after {
   background-color: rgb(237, 237, 20);;
+}
+
+.hoverMeTop:after {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: black;
+  content: '';
+  transition: width 0.5s ease-in-out;
+  margin: 0;
+  padding: 0;
+}
+.hoverMeTop:hover:after{
+  background-color: black;
+  width: 100%;
+}
+
+.button {
+  height: 40px;
+  width: 375px;
+  border: 0;
+  background-color: transparent;
+  position: relative;
 }
 
 /* .slide-up {
