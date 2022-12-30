@@ -2,10 +2,10 @@
 Feel the Heat is a online blog with the intent of raising awareness on global warming and climate change. People can sign up as users of the website and post interesting articles that will help educate about the effects of climate change. Users are also able to create reviews and give ratings to articles they liked or disliked.
 
 ## :bar_chart: **Screenshots of Project**
-<img src = https://i.imgur.com/fNjLwlr.jpg>
-<img src = https://i.imgur.com/4QiDHqk.jpg>
-<img src = https://i.imgur.com/F0sJYsn.jpg>
-<img src = https://i.imgur.com/FjifRrd.jpg>
+<img src = https://i.imgur.com/EA4iIUV.jpg>
+<img src = https://i.imgur.com/pJYRfKn.jpg>
+<img src = https://i.imgur.com/54svmvE.jpg>
+<img src = https://i.imgur.com/5kQ4FPd.png>
 
 ## :computer: **Technologies Used**
 ![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
@@ -19,7 +19,7 @@ Feel the Heat is a online blog with the intent of raising awareness on global wa
 ![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
 
 ## :link: **Important Links**
-[Feel the Heat Blog] (https://climate-change-blogproject.herokuapp.com/)
+[Feel the Heat Blog] (https://feeltheheatblog.herokuapp.com/)
 [Trello Planning Board] (https://trello.com/b/ipMYjy0T/p2)
 
 
