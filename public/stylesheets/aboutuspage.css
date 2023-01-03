@@ -23,7 +23,7 @@ body {
 
 .blogs > h1 {
   padding-top: 20rem;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
   color: white;
 }
 
@@ -56,16 +56,21 @@ body {
   .container > * {
     width: 100%;
   }
+
+  .mission {
+    margin-top: 5rem;
+  }
 }
 
 @media only screen and (min-width: 1700px)  {
   
   .blogs {
-    margin-top: 3rem;
+    margin-top: 1rem;
+    padding: 0;
   }
 
   .mission {
-    margin-top: 5rem;
+    margin-top: 10rem;
   }
 }
 
@@ -89,7 +94,7 @@ body {
   }
   }
 
-@media only screen and (min-width: 2700px)  {
+@media only screen and (min-width: 2650px)  {
 
   .blogs {
     margin-top: 30rem;
@@ -99,7 +104,7 @@ body {
   }
   }
 
-@media only screen and (min-width: 2950px)  {
+@media only screen and (min-width: 2900px)  {
 
   .blogs {
     margin-top: 40rem;
@@ -109,7 +114,7 @@ body {
   }
   }
 
-@media only screen and (min-width: 3150px)  {
+@media only screen and (min-width: 3200px)  {
 
   .blogs {
     margin-top: 50rem;

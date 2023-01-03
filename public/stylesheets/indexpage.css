@@ -1,7 +1,7 @@
 body {
   background-image: url('https://climate.nasa.gov/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcnNCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--36c00e11e2cd18e35f2f5d802d627f6061100fee/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MWm05eWJXRjBPZ2wzWldKdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--308d105b858fde2aa7c2bd953e87f719e2dd73bb/1266_banner-solutions-1600x500.jpg?content_type=image%2Fwebp&disposition=inline');
   background-repeat: no-repeat;
-  background-size: 1500px 500px;
+  background-size: 100% 70%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -58,8 +58,7 @@ button {
 @media only screen and (min-width: 1450px)  {
 
   body {
-    background-size: 100%;
-
+    background-size: 100% 39.5%;
   }
 
   .container > * {
@@ -67,46 +66,91 @@ button {
   }
 }
 
+  .blogs {
+    margin-top: -39rem;
+  }
 
-@media only screen and (min-width: 1650px)  {
+  .blogs h1 {
+    margin-bottom: 3.5rem;
+  }
+
+
+@media only screen and (min-width: 1700px)  {
   
-  .talk {
-    margin-top: -13rem;
+  .blogs {
+    margin-top: -38rem;
+  }
+  .blogs h1 {
+    margin-bottom: 8rem;
   }
 }
 
 @media only screen and (min-width: 2000px)  {
 
-  .talk {
-    margin-top: -8rem;
-
+  .blogs {
+    margin-top: -29rem;
+  }
+  body {
+    background-size: 100% 50%;
+  }
+  .blogs h1 {
+    margin-bottom: 8rem;
   }
 }
 
 @media only screen and (min-width: 2400px)  {
 
-  .talk {
-    margin-top: 1rem;
+  .blogs {
+    margin-top: -19rem;
   }
+  body {
+    background-size: 100% 55%;
+  }
+  .blogs h1 {
+    margin-bottom: 8rem;
+  }
+
   }
 
 @media only screen and (min-width: 2650px)  {
 
-  .talk {
-    margin-top: 5rem;
+  .blogs {
+    margin-top: -9rem;
+  }
+  body {
+    background-size: 100% 60%;
+  }
+
+  .blogs h1 {
+    margin-bottom: 8rem;
   }
   }
 
 @media only screen and (min-width: 2900px)  {
 
-  .talk {
-    margin-top: 10rem;
+  .blogs {
+    margin-top: 1rem;
   }
+  body {
+    background-size: 100% 65%;
+  }
+  .blogs h1 {
+    margin-bottom: 8rem;
+  }
+
   }
 
 @media only screen and (min-width: 3200px)  {
 
-  .talk {
-    margin-top: 20rem;
+  .blogs {
+    margin-top: 11rem;
+  }
+
+  .blogs h1 {
+    margin-bottom: 8rem;
+  }
+
+  body {
+    background-size: 100% 70%;
   }
   }
