@@ -1,7 +1,7 @@
 body {
   background-image: url("https://climate.nasa.gov/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmtCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7eb25f16a2523b655b26a4b751b9f7428f995fe5/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MWm05eWJXRjBPZ2wzWldKdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--308d105b858fde2aa7c2bd953e87f719e2dd73bb/1268_banner-articles-1600x500.jpg?content_type=image%2Fwebp&disposition=inline");
   background-repeat: no-repeat;
-  background-size: 1500px 500px;
+  background-size: 100% 70%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -58,8 +58,12 @@ h6 {
 @media only screen and (min-width: 1450px)  {
 
   body {
-    background-size: 100%;
+    background-size: 100% 38%;
 
+  }
+
+  .news-articles h1 {
+    margin-bottom: 2rem;
   }
 
   .container > * {
@@ -70,41 +74,88 @@ h6 {
 @media only screen and (min-width: 1700px)  {
   
   .news-articles {
-    margin-top: 5rem;
+    margin-top: 1rem;
+  }
+
+  .news-articles h1 {
+    margin-bottom: 8rem;
+  }
+  body {
+    background-size: 100% 46%;
+
   }
 }
 
 @media only screen and (min-width: 2000px)  {
 
   .news-articles {
-    margin-top: 20rem;
+    margin-top: 10rem;
+  }
+
+  .news-articles h1 {
+    margin-bottom: 8rem;
+  }
+
+  body {
+    background-size: 100% 50%;
   }
 }
 
 @media only screen and (min-width: 2400px)  {
 
   .news-articles {
-    margin-top: 35rem;
+    margin-top: 22rem;
+  }
+
+  .news-articles h1 {
+    margin-bottom: 8rem;
+  }
+
+  body {
+    background-size: 100% 55%;
   }
   }
 
-@media only screen and (min-width: 2700px)  {
+@media only screen and (min-width: 2650px)  {
 
   .news-articles {
-    margin-top: 45rem;
+    margin-top: 32rem;
+  }
+  .news-articles h1 {
+    margin-bottom: 8rem;
+  }
+
+  body {
+    background-size: 100% 60%;
   }
   }
 
-@media only screen and (min-width: 2950px)  {
+@media only screen and (min-width: 2900px)  {
 
   .news-articles {
-    margin-top: 55rem;
+    margin-top: 42rem;
+  }
+
+  .news-articles h1 {
+    margin-bottom: 7.5rem;
+  }
+
+  body {
+    background-size: 100% 65%;
   }
   }
 
 @media only screen and (min-width: 3200px)  {
 
   .news-articles {
-    margin-top: 65rem;
+    margin-top: 52rem;
+  }
+
+  .news-articles h1 {
+    margin-bottom: 7.5rem;
+  }
+
+  body {
+    background-size: 100% 70%;
   }
   }

@@ -26,6 +26,7 @@ body {
   color: white;
 }
 
+
 .topics {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -58,13 +59,13 @@ button {
 @media only screen and (min-width: 1450px)  {
 
   body {
-    background-size: 100% 39.5%;
+    background-size: 100% 38%;
   }
 
   .container > * {
     width: 100%;
   }
-}
+
 
   .blogs {
     margin-top: -39rem;
@@ -73,7 +74,7 @@ button {
   .blogs h1 {
     margin-bottom: 3.5rem;
   }
-
+}
 
 @media only screen and (min-width: 1700px)  {
   
@@ -83,7 +84,12 @@ button {
   .blogs h1 {
     margin-bottom: 8rem;
   }
+  body {
+    background-size: 100% 46%;
+
+  }
 }
+
 
 @media only screen and (min-width: 2000px)  {
 
