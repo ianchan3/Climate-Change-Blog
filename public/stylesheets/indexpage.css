@@ -33,6 +33,7 @@ body {
   place-items: center;
 }
 
+
 .new-input {
   margin: 3rem 0;
 }
@@ -52,9 +53,7 @@ body {
   font-size: 1rem;
 }
 
-button {
-  margin-top: 1rem;
-}
+
 
 @media only screen and (min-width: 1450px)  {
 
@@ -71,8 +70,11 @@ button {
     margin-top: -39rem;
   }
 
-  .blogs h1 {
+  .blogs h1, .blogs button {
     margin-bottom: 3.5rem;
+  }
+  button {
+    margin-top: 1rem;
   }
 }
 
@@ -81,7 +83,7 @@ button {
   .blogs {
     margin-top: -38rem;
   }
-  .blogs h1 {
+  .blogs h1, .blogs button {
     margin-bottom: 8rem;
   }
   body {

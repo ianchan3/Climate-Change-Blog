@@ -104,7 +104,7 @@ h6 {
 @media only screen and (min-width: 2400px)  {
 
   .news-articles {
-    margin-top: 22rem;
+    margin-top: 20rem;
   }
 
   .news-articles h1 {
@@ -119,7 +119,7 @@ h6 {
 @media only screen and (min-width: 2650px)  {
 
   .news-articles {
-    margin-top: 32rem;
+    margin-top: 30rem;
   }
   .news-articles h1 {
     margin-bottom: 8rem;
@@ -133,11 +133,11 @@ h6 {
 @media only screen and (min-width: 2900px)  {
 
   .news-articles {
-    margin-top: 42rem;
+    margin-top: 40rem;
   }
 
   .news-articles h1 {
-    margin-bottom: 7.5rem;
+    margin-bottom: 8rem;
   }
 
   body {
@@ -148,11 +148,11 @@ h6 {
 @media only screen and (min-width: 3200px)  {
 
   .news-articles {
-    margin-top: 52rem;
+    margin-top: 50rem;
   }
 
   .news-articles h1 {
-    margin-bottom: 7.5rem;
+    margin-bottom: 8rem;
   }
 
   body {

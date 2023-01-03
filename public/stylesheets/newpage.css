@@ -1,13 +1,11 @@
 body {
     background-image: url('https://climate.nasa.gov/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmdCIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ed03884dc444877f6d1bcea489e075f213b4aeb5/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MWm05eWJXRjBPZ2wzWldKdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--308d105b858fde2aa7c2bd953e87f719e2dd73bb/1302_1291_banner-met-1600x500.jpg?content_type=image%2Fwebp&disposition=inline');
     background-repeat: no-repeat;
-    background-size: 1500px 500px;
+    background-size: 100% 70%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-
- 
 
 #new-blog {
   text-align: center;
@@ -68,3 +66,108 @@ textarea {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+@media only screen and (min-width: 1450px)  {
+
+  body {
+    background-size: 100% 38%;
+
+  }
+
+  #new-blog {
+    margin-bottom: -4rem;
+  }
+
+  .container > * {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1700px)  {
+  
+  #new-blog {
+    margin-top: 1.5rem;
+  }
+
+  #new-blog {
+    margin-bottom: 9rem;
+  }
+  body {
+    background-size: 100% 46%;
+
+  }
+}
+
+@media only screen and (min-width: 2000px)  {
+
+  #new-blog {
+    margin-top: 6.5rem;
+  }
+
+  #new-blog {
+    margin-bottom: 9rem;
+  }
+
+  body {
+    background-size: 100% 50%;
+  }
+}
+
+@media only screen and (min-width: 2400px)  {
+
+  #new-blog {
+    margin-top: 11.5rem;
+  }
+
+  #new-blog {
+    margin-bottom: 9rem;
+  }
+
+  body {
+    background-size: 100% 55%;
+  }
+  }
+
+@media only screen and (min-width: 2650px)  {
+
+  #new-blog {
+    margin-top: 16.5rem;
+  }
+  #new-blog {
+    margin-bottom: 9rem;
+  }
+
+  body {
+    background-size: 100% 60%;
+  }
+  }
+
+@media only screen and (min-width: 2900px)  {
+
+  #new-blog {
+    margin-top: 21.5rem;
+  }
+
+  #new-blog {
+    margin-bottom: 9rem;
+  }
+
+  body {
+    background-size: 100% 65%;
+  }
+  }
+
+@media only screen and (min-width: 3200px)  {
+
+  #new-blog {
+    margin-top: 26.5rem;
+  }
+
+  #new-blog {
+    margin-bottom: 9rem;
+  }
+
+  body {
+    background-size: 100% 70%;
+  }
+  }
