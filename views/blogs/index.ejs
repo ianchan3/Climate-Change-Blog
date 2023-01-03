@@ -10,7 +10,7 @@
       <h1>Topic</h1>
       <h1>Blogs</h1>
       <h1>Date Created</h1>
-      <h1></h1>
+      <button id="new-blog"><a class="button" href="/blogs/new">Write Something Interesting?</a></button>
       <% blogs.forEach(function(a) { %>
         <h1 class="new-input"><%= a.topic %></h1>
         <h1 class="new-input"><%= a.title %></h1>
@@ -20,6 +20,5 @@
       </div>
     </div>
   </div>
-  <button id="new-blog"><a class="button" href="/blogs/new">Write Something Interesting?</a></button>
   
 <%- include('../partials/footer') %>

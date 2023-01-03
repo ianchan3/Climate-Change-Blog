@@ -21,7 +21,7 @@ body {
 }
 
 .blogs .talk {
-  padding-top: 18.5rem;
+  /* padding-top: 18.5rem; */
   padding-bottom: 5rem;
   color: white;
 }
@@ -54,10 +54,57 @@ button {
   margin-top: 1rem;
 }
 
-#new-blog {
-  margin-right: 15.7rem;
-  margin-bottom: 7rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+@media only screen and (min-width: 1450px)  {
+
+  body {
+    background-size: 100%;
+
+  }
+
+  .container > * {
+    width: 100%;
+  }
 }
+
+
+@media only screen and (min-width: 1650px)  {
+  
+  .talk {
+    margin-top: 6.5rem;
+  }
+}
+
+@media only screen and (min-width: 2000px)  {
+
+  .talk {
+    margin-top: 15rem;
+  }
+}
+
+@media only screen and (min-width: 2400px)  {
+
+  .talk {
+    margin-top: 22rem;
+  }
+  }
+
+@media only screen and (min-width: 2650px)  {
+
+  .talk {
+    margin-top: 27rem;
+  }
+  }
+
+@media only screen and (min-width: 2900px)  {
+
+  .talk {
+    margin-top: 32rem;
+  }
+  }
+
+@media only screen and (min-width: 3200px)  {
+
+  .talk {
+    margin-top: 37rem;
+  }
+  }
