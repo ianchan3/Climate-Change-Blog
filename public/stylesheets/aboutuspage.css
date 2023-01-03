@@ -1,7 +1,7 @@
 body {
   background-image: url("https://climate.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMjlZQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6a285e4dc2be73d7a37f1d230fe5222aff4a82f1/about_us_banner.jpeg");
   background-repeat: no-repeat;
-  background-size: 1500px 500px;
+  background-size: 100% 70%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,7 +28,7 @@ body {
 }
 
 .mission {
-  padding: 1.5rem 0 ;
+  padding: 3rem 0;
 }
 
 .humanity-goal {
@@ -43,3 +43,79 @@ body {
 .humanity-goal h1, .mission h1 {
   text-decoration: underline;
 }
+
+
+
+@media only screen and (min-width: 1450px)  {
+
+  body {
+    background-size: 100%;
+
+  }
+
+  .container > * {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1700px)  {
+  
+  .blogs {
+    margin-top: 3rem;
+  }
+
+  .mission {
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (min-width: 2000px)  {
+
+  .blogs {
+    margin-top: 10rem;
+  }
+  body {
+    background-size: 100% 50%;
+  }
+}
+
+@media only screen and (min-width: 2400px)  {
+
+  .blogs {
+    margin-top: 20rem;
+  }
+  body {
+    background-size: 100% 55%;
+  }
+  }
+
+@media only screen and (min-width: 2700px)  {
+
+  .blogs {
+    margin-top: 30rem;
+  }
+  body {
+    background-size: 100% 60%;
+  }
+  }
+
+@media only screen and (min-width: 2950px)  {
+
+  .blogs {
+    margin-top: 40rem;
+  }
+  body {
+    background-size: 100% 65%;
+  }
+  }
+
+@media only screen and (min-width: 3150px)  {
+
+  .blogs {
+    margin-top: 50rem;
+  }
+
+  body {
+    background-size: 100% 70%;
+  }
+  }
