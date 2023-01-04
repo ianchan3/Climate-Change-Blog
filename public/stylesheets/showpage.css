@@ -1,7 +1,7 @@
 body {
     background-image: url('https://climate.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMGRZQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--2348ddd47b83e89f2dccbd9ee7beab57d91ef263/banner-science-1600x500.jpeg');
     background-repeat: no-repeat;
-    background-size: 1500px 500px;
+    background-size: 100% 70%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -131,3 +131,92 @@ h5 {
 #one {
   padding-bottom: 1rem;
 }
+
+
+@media only screen and (min-width: 1450px)  {
+
+  body {
+    background-size: 100% 38%;
+  }
+
+  #header {
+    margin-top: 21.5rem;
+    margin-bottom: 15rem;
+    padding: 0;
+  }
+
+  .container > * {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 1700px)  {
+  
+  #header {
+    margin-top: 21.5rem;
+    margin-bottom: 15rem;
+    padding: 0;
+  }
+  body {
+    background-size: 100% 46%;
+  }
+}
+
+@media only screen and (min-width: 2000px)  {
+
+  #header {
+    margin-top: 26.5rem;
+    margin-bottom: 15rem;
+  }
+  body {
+    background-size: 100% 50%;
+  }
+}
+
+@media only screen and (min-width: 2400px)  {
+
+  #header {
+    margin-top: 31.5rem;
+    margin-bottom: 15rem;
+  }
+  body {
+    background-size: 100% 55%;
+  }
+  }
+
+@media only screen and (min-width: 2650px)  {
+
+  #header {
+    margin-top: 36.5rem;
+    margin-bottom: 15rem;
+  }
+  body {
+    background-size: 100% 60%;
+  }
+  }
+
+@media only screen and (min-width: 2900px)  {
+
+  #header {
+    margin-top: 41.5rem;
+    margin-bottom: 15rem;
+  }
+  body {
+    background-size: 100% 65%;
+  }
+  }
+
+@media only screen and (min-width: 3200px)  {
+
+  #header {
+    margin-top: 46.5rem;
+    margin-bottom: 15rem;
+  }
+
+
+
+  body {
+    background-size: 100% 70%;
+  }
+  }
