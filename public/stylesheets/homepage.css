@@ -212,15 +212,118 @@ div img {
   position: relative;
 }
 
-/* .slide-up {
-  animation: slide-up ease 0.8s;
-} */
-/* 
-@keyframes slide-up {
-  0% {
-    transform: translateY(0);
+@media only screen and (min-width: 1450px)  {
+
+  #myVideo {
+    width: 2100px;
+    height: 1400px;
+    left: 0;
+    right: 0;
+    object-fit: cover;
   }
-  100% {
-    transform: translateY(-50rem);
+
+  #header {
+    margin-top: 21.5rem;
+    margin-bottom: 15rem;
+    padding: 0;
   }
-} */
+
+  .container > * {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 1700px)  {
+  
+  #header {
+    margin-top: 21.5rem;
+    margin-bottom: 15rem;
+    padding: 0;
+  }
+  #myVideo {
+    width: 2300px;
+    height: 1400px;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 2000px)  {
+
+  #header {
+    margin-top: 26.5rem;
+    margin-bottom: 15rem;
+  }
+  #myVideo {
+    width: 2500px;
+    height: 1400px;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 2400px)  {
+
+  #header {
+    margin-top: 31.5rem;
+    margin-bottom: 15rem;
+  }
+  #myVideo {
+    width: 2700px;
+    height: 1400px;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+  }
+  }
+
+@media only screen and (min-width: 2650px)  {
+
+  #header {
+    margin-top: 36.5rem;
+    margin-bottom: 15rem;
+  }
+  #myVideo {
+    width: 2900px;
+    height: 1400px;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+  }
+  }
+
+@media only screen and (min-width: 2900px)  {
+
+  #header {
+    margin-top: 41.5rem;
+    margin-bottom: 15rem;
+  }
+  #myVideo {
+    width: 3200px;
+    height: 1400px;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+  }
+  }
+
+@media only screen and (min-width: 3200px)  {
+
+  #header {
+    margin-top: 46.5rem;
+    margin-bottom: 15rem;
+  }
+
+
+
+  #myVideo {
+    width: 3500px;
+    height: 1400px;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+  }
+  }
