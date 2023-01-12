@@ -79,10 +79,6 @@ h2 {
   padding: 0;
 }
 
-.circle-container #circle4, .circle-container #circle5, .circle-container #circle6 {
-  margin-bottom: 4.5rem;
-}
-
 .circle-container h1, .circle-container div, .circle-container h2 {
   margin: 0;
 }
@@ -220,3 +216,64 @@ div img {
     object-fit: cover;
   }
 
+  @media only screen and (max-width: 1250px)  {
+
+    .circle-container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 5%;
+      place-items: center;
+    }
+
+    #circle4 {
+      margin: 0 0 0 0;
+    }
+  }
+  @media only screen and (max-width: 1000px)  {
+
+    .circle-container {
+      width: 100%;
+      display: grid;
+      /* grid-template-columns: repeat(1, 1fr); */
+      margin-top: 7.5%;
+    }
+    nav {
+      margin-top: 5%;
+    }
+  }
+  @media only screen and (max-width: 700px)  {
+    nav, .circle-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      place-items: center;
+    }
+
+    nav a {
+      margin-top: 0.5rem;
+    }
+
+    nav > h2 {
+      margin-right: 7%;
+    }
+
+    .icons {
+      margin-left: 0.3rem;
+    }
+
+    .circle-container {
+      position: relative;
+      margin-top: 60%;
+    }
+
+    #circle1, #circle2, #circle3, #circle4, #circle5, #circle6 {
+      margin-top: 3rem;
+    }
+    body {
+      overflow-x: visible;
+      overflow-y: visible;
+    }
+    #myVideo {
+      height: 250%;
+    }
+  }
