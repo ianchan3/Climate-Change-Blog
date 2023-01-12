@@ -276,4 +276,8 @@ div img {
     #myVideo {
       height: 250%;
     }
+
+    .model-content img {
+     width: 80%;
   }
+}
