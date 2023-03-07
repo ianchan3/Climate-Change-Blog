@@ -7,7 +7,7 @@ Feel The Heat is a online blog that aims to increase awareness about global warm
 <img src = https://i.imgur.com/5kQ4FPd.png>
 
 ## :computer: **Technologies Used**
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,nodejs,express,mongodb,git,github,vscode)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,nodejs,express,mongodb,git,github,vscode,markdown)](https://skillicons.dev)
 
 ## :link: **Important Links**
 [Feel the Heat Blog] (https://feeltheheatblog.herokuapp.com/)
