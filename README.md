@@ -7,15 +7,7 @@ Feel The Heat is a online blog that aims to increase awareness about global warm
 <img src = https://i.imgur.com/5kQ4FPd.png>
 
 ## :computer: **Technologies Used**
-![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
-![Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express)
-![Node](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
-![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript)
-![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
-![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
-![Trello](https://img.shields.io/badge/-Trello-333?style=flat&logo=trello)
-![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
-![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,nodejs,express,mongodb,git,github,vscode)](https://skillicons.dev)
 
 ## :link: **Important Links**
 [Feel the Heat Blog] (https://feeltheheatblog.herokuapp.com/)
